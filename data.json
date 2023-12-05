@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Brenda Armstrong",
+    "age": 44
+  },
+  {
+    "id": 2,
+    "name": "Stephan Bendiksen",
+    "age": 43
+  },
+  {
+    "id": 3,
+    "name": "Josie Bendiksen",
+    "age": 5
+  },
+  {
+    "id": 4,
+    "name": "Ellie Bendiksen",
+    "age": 5
+  },
+  {
+    "id": 5,
+    "name": "Magnus the Cat",
+    "age": 1
+  },
+  {
+    "id": 6,
+    "name": "Ragnar the Cat",
+    "age": 1
+  }
+]
