@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QAP 5 - JavaScript JSON Data with Arrays</title>
+</head>
+<body>
+  <h1>QAP 5 - JavaScript JSON Data with Arrays</h1>
+
+  <!-- Add this div for displaying log messages -->
+  <div id="consoleOutput"></div>
+
+  <script>
+    // Function to append log messages to the output div
+    function appendToConsole(message) {
+      const consoleOutput = document.getElementById('consoleOutput');
+      consoleOutput.innerHTML += message + '<br>';
+    }
+
+    // Use fetch to get JSON data
+    fetch('./data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Iterate through the array and log values to the consoleOutput div
+        data.forEach(record => {
+          appendToConsole(`${record.ID}, ${record.name}, ${record.age}`);
+          console.log(record.ID, record.name, record.age);
+        });
+      })
+      .catch(error => {
+        // Log errors to the consoleOutput div
+        appendToConsole(`Error: ${error}`);
+      });
+  </script>
+</body>
+</html>
+
