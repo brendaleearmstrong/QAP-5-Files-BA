@@ -24,8 +24,8 @@
       .then(data => {
         // Iterate through the array and log values to the consoleOutput div
         data.forEach(record => {
-          appendToConsole(`${record.ID}, ${record.name}, ${record.age}`);
-          console.log(record.ID, record.name, record.age);
+          appendToConsole(`${record.id}, ${record.name}, ${record.age}`);
+          console.log(record.id, record.name, record.age);
         });
       })
       .catch(error => {
